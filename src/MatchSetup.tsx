@@ -1,11 +1,11 @@
-import React, { useState, useContext } from "react";
-import { ScoreContext, IScoreContext } from "./ScoreContext";
+import React, { useContext } from "react";
 import Players from "./Players";
-import RemoveFromTeamButton from "./RemoveFromTeamButton";
 import { useHistory } from "react-router";
+/** @jsx jsx */
+import { css, jsx } from "@emotion/core";
+import Team from "./Team";
 
 export default function MatchSetup() {
-  const { players, setPlayer } = useContext<IScoreContext>(ScoreContext);
   let history = useHistory();
 
   return (
@@ -18,35 +18,15 @@ export default function MatchSetup() {
         Start Match
       </button>
 
-      <div>
+      <div
+        css={css`
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+        `}
+      >
         <Players />
-
-        <br />
-        <br />
-        <h1>Team 1</h1>
-        <ul>
-          {players.map((data) => {
-            if (data.team === 1) {
-              return (
-                <li>
-                  {data.name} <RemoveFromTeamButton playerId={data.id} />
-                </li>
-              );
-            }
-          })}
-        </ul>
-        <h1>Team 2</h1>
-        <ul>
-          {players.map((data) => {
-            if (data.team === 2) {
-              return (
-                <li>
-                  {data.name} <RemoveFromTeamButton playerId={data.id} />
-                </li>
-              );
-            }
-          })}
-        </ul>
+        <Team teamId={1} />
+        <Team teamId={2} />
       </div>
     </div>
   );

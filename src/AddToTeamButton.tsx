@@ -11,6 +11,7 @@ export default function AddToTeamButton(props: AddToTeamButton) {
 
   return (
     <button
+      style={{ marginLeft: "10px" }}
       onClick={() => {
         const newArray = players.map((player) => {
           if (props.playerId === player.id) {
