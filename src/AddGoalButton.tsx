@@ -22,7 +22,6 @@ export default function AddGoalButton(props: AddGoalButton) {
           margin-top: 10px;
           background-color: ${props.player.team === 1 ? "#6D597A" : "#EAAC8B"};
           color: #fff;
-          border-radius: 3%;
           border: 0;
           width: 100%;
           height: 70px;

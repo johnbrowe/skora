@@ -31,7 +31,6 @@ export default function Match() {
           padding: 10px;
           color: #fff;
           border: 0;
-          border-radius: 10%;
           background-color: #e56b6f;
         `}
         onClick={() => {
