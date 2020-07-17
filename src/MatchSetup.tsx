@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import Players from "./Players";
 import { useHistory } from "react-router";
 import { ReactComponent as Logo } from "./skora-logo.svg";

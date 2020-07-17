@@ -6,7 +6,7 @@ import AddToTeamButton from "./AddToTeamButton";
 import { css, jsx } from "@emotion/core";
 
 export default function Players() {
-  const { players, setPlayer } = useContext<IScoreContext>(ScoreContext);
+  const { players } = useContext<IScoreContext>(ScoreContext);
 
   return (
     <div>
@@ -37,6 +37,8 @@ export default function Players() {
               </div>
             );
           }
+
+          return null;
         })}
     </div>
   );

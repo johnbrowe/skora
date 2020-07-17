@@ -34,6 +34,7 @@ export default function Team(props: Props) {
           if (data.team === props.teamId) {
             return (
               <li
+                key={data.id}
                 css={css`
                   padding-top: 10px;
                   font-size: 1.3em;
@@ -44,6 +45,7 @@ export default function Team(props: Props) {
               </li>
             );
           }
+          return null;
         })}
       </ul>
     </div>

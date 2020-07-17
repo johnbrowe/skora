@@ -85,6 +85,7 @@ export default function Match() {
               if (data.team === 1) {
                 return <AddGoalButton player={data} />;
               }
+              return null;
             })}
           </ul>
         </div>
@@ -121,6 +122,7 @@ export default function Match() {
               if (data.team === 2) {
                 return <AddGoalButton player={data} />;
               }
+              return null;
             })}
           </ul>
         </div>
