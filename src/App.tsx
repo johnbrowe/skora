@@ -1,8 +1,9 @@
+// eslint-disable-line @typescript-eslint/no-unused-vars
 import React, { useState } from "react";
 import { ScoreContext, Player } from "./ScoreContext";
 import MatchSetup from "./MatchSetup";
 import Match from "./Match";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   const Players: Player[] = [

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useContext } from "react";
 import { ScoreContext, IScoreContext } from "./ScoreContext";
 import AddGoalButton from "./AddGoalButton";
@@ -83,7 +84,7 @@ export default function Match() {
           >
             {players.map((data) => {
               if (data.team === 1) {
-                return <AddGoalButton player={data} />;
+                return <AddGoalButton key={data.id} player={data} />;
               }
               return null;
             })}
@@ -120,7 +121,7 @@ export default function Match() {
           >
             {players.map((data) => {
               if (data.team === 2) {
-                return <AddGoalButton player={data} />;
+                return <AddGoalButton key={data.id} player={data} />;
               }
               return null;
             })}

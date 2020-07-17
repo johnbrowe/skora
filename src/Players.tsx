@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useContext } from "react";
 import { ScoreContext, IScoreContext } from "./ScoreContext";
 import AddToTeamButton from "./AddToTeamButton";

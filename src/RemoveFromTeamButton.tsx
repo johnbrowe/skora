@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import React, { useContext } from "react";
 import { ScoreContext, IScoreContext } from "./ScoreContext";
 /** @jsx jsx */
