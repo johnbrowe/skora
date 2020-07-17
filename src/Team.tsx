@@ -13,11 +13,21 @@ export default function Team(props: Props) {
 
   return (
     <div>
-      <h1>Team {props.teamId}</h1>
+      <h1
+        css={css`
+          color: ${props.teamId === 1 ? "#6D597A" : "#EAAC8B"};
+        `}
+      >
+        Team {props.teamId}
+      </h1>
       <ul
         css={css`
           list-style: none;
           padding: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
         `}
       >
         {players.map((data) => {
@@ -26,9 +36,7 @@ export default function Team(props: Props) {
               <li
                 css={css`
                   padding-top: 10px;
-                  display: flex;
-                  justify-content: space-between;
-                  width: 200px;
+                  font-size: 1.3em;
                 `}
               >
                 <div>{data.name}</div>

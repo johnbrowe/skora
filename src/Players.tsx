@@ -18,12 +18,16 @@ export default function Players() {
                 key={thisPlayer.id}
                 css={css`
                   display: flex;
+                  justify-content: center;
+                  align-items: center;
                   margin-top: 25px;
                 `}
               >
                 <p
                   css={css`
                     width: 110px;
+                    font-size: 1.3em;
+                    color: #355070;
                   `}
                 >
                   {thisPlayer.name}

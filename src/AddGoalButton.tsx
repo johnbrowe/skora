@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
 import { ScoreContext, IScoreContext, Player } from "./ScoreContext";
+/** @jsx jsx */
+import { css, jsx } from "@emotion/core";
 
 interface AddGoalButton {
   player: Player;
@@ -9,8 +11,23 @@ export default function AddGoalButton(props: AddGoalButton) {
   const { players, setPlayer } = useContext<IScoreContext>(ScoreContext);
 
   return (
-    <div key={props.player.id}>
+    <li
+      css={css`
+        width: 100%;
+      `}
+      key={props.player.id}
+    >
       <button
+        css={css`
+          margin-top: 10px;
+          background-color: ${props.player.team === 1 ? "#6D597A" : "#EAAC8B"};
+          color: #fff;
+          border-radius: 3%;
+          border: 0;
+          width: 100%;
+          height: 70px;
+          font-size: 1.3em;
+        `}
         onClick={() => {
           const newArray = players.map((player) => {
             if (props.player.id === player.id) {
@@ -23,7 +40,13 @@ export default function AddGoalButton(props: AddGoalButton) {
       >
         {props.player.name}
       </button>
-      <p>{props.player.goals}</p>
-    </div>
+      <p
+        css={css`
+          text-align: center;
+        `}
+      >
+        {props.player.goals}
+      </p>
+    </li>
   );
 }
