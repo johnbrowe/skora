@@ -1,4 +1,7 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Skora
+
+This is Hockey score keeping app, made for the merry men of hugskotið.
+It is a create-react project and below are the necesarry commands to run the project.
 
 ## Available Scripts
 
