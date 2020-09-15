@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   const Players: Player[] = [
     { id: 1, name: "John", team: null, goals: 0 },
-    { id: 2, name: "Magni", team: null, goals: 0 },
+    { id: 2, name: "Brian", team: null, goals: 0 },
     { id: 3, name: "Signar", team: null, goals: 0 },
     { id: 4, name: "Jóannes", team: null, goals: 0 },
     { id: 5, name: "Sigmundur", team: null, goals: 0 },
