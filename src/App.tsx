@@ -15,7 +15,7 @@ function App() {
     { id: 6, name: "Heini", team: null, goals: 0 },
     { id: 7, name: "Ólavur", team: null, goals: 0 },
     { id: 8, name: "Magni", team: null, goals: 0 },
-    { id: 9, name: "Tróndur", team: null, goals: 0 },
+    { id: 9, name: "Hanus", team: null, goals: 0 },
   ];
 
   const [players, setPlayer] = useState<Player[]>(Players);
